@@ -1,14 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
 }
+
+.logo{
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+
+}
+.goods_wrap{
+  display: flex;
+  margin: 0 auto;
+  width: 1380px;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.list_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.signin_wrap{
+  position: fixed;
+  background-color: #fff;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  z-index: 100;
+}
+
+
+
+
+@media (max-width: 1380px){
+  .goods_wrap{
+    width: 100%;
+  }
+}
+
